@@ -1,258 +1,986 @@
-﻿
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>创新有你</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<script type="text/javascript" src="js/jquery-1.8.2.min.js" ></script>
-<script type="text/javascript" src="js/web.js" ></script>
-<script type="text/javascript" src="js/gundong.js" ></script>
-<script>
-$(function(){
-	web_obj.slide('.gundong_',{
-		items   :   '.ly_item',
-		seenum  :   5,
-		slidenum:   5,
-		leftbtn :   '.ly_left_btn',
-		rightbtn:   '.ly_right_btn' 
-	}); 
-})
-</script>
-<!--[if IE 6]>
-<script type='text/javascript' src='js/dd_belatedpng.js' ></script>
-<![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创新有你</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <!-- plugin scripts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/piloz-icons.css">
+
+    <!-- theme styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+	  <link rel="stylesheet" href="assets/css/information-rate.css">
+		<link rel="stylesheet" href="assets/css/information-detail.css">
+
+		<!--	图标-->
+<!--		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
 </head>
+
 <body>
-<div id="ly_header" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="default.htmll"> <img src="images/logo.png" /> <span></span> </a></div>
-    </div>
 
-    <div class="ly_cbar ly_fr">
-      <div class="ly_top">
-        <div id="ly_search">
-          <form action="/search.html" method="get">
-            <input class="ly_txt" type="text" name="keyword" placeholder="输入关键词快速组队" value="" />
-            <input class="ly_btn" type="submit" value="组队" />
-          </form>
-        </div>
-      </div>
-      <div class="ly_bot">
-        <div class="ly_hot"> 热门搜索： <a href="#">计算机设计大赛</a><a href="#">AI</a><a href="#">数据分析</a><a href="#">往届优秀文档</a></div>
-      </div>
-    </div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
-<!--导航-->
-	<div id="ly_menu">
-  <div class="ly_wrap">
-    <div class="lyg_fir lyg_current"><a href="default.html">首页</a></div>
-    <div class="lyg_fir"><a href="">近期资讯</a></div>
-    <div class="lyg_fir"><a href="news.html">动态中心</a></div>
-    <div class="lyg_fir"><a href="about.html">个人中心</a></div>
-	  <div class="lyg_fir"><a href="product.html">往届作品展示</a></div>
-    <div class="lyg_fir"><a href="">联系我们</a></div>
-    <div class="lyg_clear"></div>
-  </div>
-	</div>
-	<div class="banner">
-  <ul class="slides">
-    <li style="background:url(images/banner1.png) 50% 0 no-repeat;"></li>
-    <li style="background:url(images/banner2.png) 50% 0 no-repeat;"></li>
-  </ul>
-</div>
+    <div class="preloader">
+        <img src="assets/images/loader.png" height="100" class="preloader__image" alt="">
+    </div><!-- /.preloader -->
+
+    <div class="page-wrapper">
+        <header class="site-header-one stricky site-header-one__fixed-top">
+            <div class="container-fluid">
+                <div class="site-header-one__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-1-1.png" width="129" alt="">
+                    </a>
+                    <span class="side-menu__toggler"><i class="fa fa-bars"></i></span><!-- /.side-menu__toggler -->
+                </div><!-- /.site-header-one__logo -->
+                <div class="main-nav__main-navigation">
+                    <ul class="main-nav__navigation-box one-page-scroll-menu">
+                        <li class="scrollToLink"><a href="#home">主页</a></li>
+                        <li class="scrollToLink"><a href="#features">最新资讯</a></li>
+<!--											<li class="scrollToLink"><a href="#screens">更多推荐</a></li>-->
+										 		<li class="scrollToLink"><a href="#testimonials">动态广场</a></li>
+                        <li class="scrollToLink"><a href="#pricing">优秀作品展示</a></li>
 
 
-<!--banner-->
+<!--                    <li class="scrollToLink"><a href="#screens">Screens</a></li>
+                        <li class="dropdown  scrollToLink">
+                            <a href="#blog">News</a>
+                            <ul>
+                                <li><a href="blog.html">News</a></li>
+                                <li><a href="blog-details.html">News Details</a></li>
+                            </ul>
+                        </li>-->
+                    </ul><!-- /.main-nav__navigation-box -->
+                </div><!-- /.main-nav__main-navigation -->
+<!--							个人中心的链接放在这里-->
+                <div class="main-nav__right">
+                    <a href="person.html" class="thm-btn"><span>个人中心</span></a>
+                </div><!-- /.main-nav__right -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.site-header-one -->
 
-<script src="js/jquery.flexslider-min.js"></script>
-<script>
-    $(function(){
-        $('.banner').flexslider({
-            directionNav: true,
-            pauseOnAction: false
-        });
-    });
-    </script>
-<div id="ly_main" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_main_b">
+        <section class="banner-one" id="home">
+<!--            <img src="assets/images/banner/banner-shape-1-1.jpg" alt="Banner-Shape-1" class="banner-shape-1">-->
+            <img src="assets/images/banner/banner-shape-1-2.png" alt="Banner-Shape-2" class="banner-shape-2">
+            <div class="banner-one__bg" style="background-image: url(assets/images/banner/banner-bg-1.png);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="banner-one__content">
+                            <h3>Welcome<br>Here<br></h3>
+                            <p>点击下方，<b>快速组队</b>
+                                开启属于你的创新之旅</p>
+                            <a href="teams.html" class="thm-btn"><span>快速组队</span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="banner-img wow fadeInUp" data-wow-duration="1500ms">
+                            <img src="assets/images/shapes/banner-1-1.png" class="banner-image__curvs" alt="">
+                            <div class="banner-bg"
+                                style="background-image: url(assets/images/banner/banner-shape-1-4.png)"></div>
+                            <img src="assets/images/banner/banner-bg.png" alt="Banner-img">
+                            <div class="banner-icon-1">
+                                <i class="piloz-lamp"></i>
+                            </div>
+<!--
+                            <div class="banner-icon-2">
+                                <i class="piloz-linked"></i>
+                            </div>
+-->
+                            <div class="banner-icon-3">
+                                <i class="piloz-human-resources"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="ly_product_bar">
-        
-      </div>
-    </div>
-    <!--关于我们-->
-    <div class="lyg_blank25"></div>
-    <div class="lyg_blank15"></div>
-    <div class="ly_main_t">
-      <div class="ly_lbar ly_fl">
-        <div class="ly_article_bar">
-          <h2><a class="ly_more" href="#">查看更多</a><span>关于我们</span> <em>ABOUT US</em> </h2>
-          <div class="lyg_blank20"></div>
-          <div class="ly_content">
-            <div class="ly_a_lbar ly_fl">
-              <div class="ly_pic"> <img src="images/ab.png" width="248" height="216" /></div>
+
+        <section id="features" class="service-one">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p>The latest competition infomation</p>
+                    <h3>最新大赛资讯</h3>
+                </div>
+                <div class="row">
+                    <div class=" col-xl-3 col-lg-3 col-md-6 wow fadeInLeft" data-wow-duration="1500ms">
+                        <div class="service-one__single">
+                            <div class="service-icon">
+                                <div class="icon-box">
+                                    <i class="piloz-writing"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>火热报名</h3>
+                                <p>人工智能创意大赛</p>
+															  <p>大学生广告设计大赛</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                        <div class="service-one__single">
+                            <div class="service-icon icon-bg-2">
+                                <div class="icon-box icon-box-bg-2">
+                                    <i class="piloz-shield"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>项目初审</h3>
+                                <p><a>程序设计大赛</a></p>
+															 <p><a>大学生商业设计大赛</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-3 col-lg-3 col-md-6 wow fadeInDown" data-wow-duration="1500ms" data-wow-delay="200ms">
+                        <div class="service-one__single">
+                            <div class="service-icon icon-bg-3">
+                                <div class="icon-box icon-box-bg-3">
+                                    <i class="piloz-user"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>中期OR决赛圈</h3>
+                                <p><a>计算机设计大赛</a></p>
+															  <p><a>大学生创新创业大赛</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-xl-3 col-lg-3 col-md-6 wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="300ms">
+                        <div class="service-one__single">
+                            <div class="service-icon icon-bg-4">
+                                <div class="icon-box icon-box-bg-4">
+                                    <i class="piloz-gear"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h3>比赛预热</h3>
+                                <p><a>“挑战杯”竞赛</a></p>
+															  <p><a>暑期实践活动</a></p>
+                            </div>
+                        </div>
+                    </div>
+<!--
+										<div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+											<div class="about_feature about_feature3">
+												<div class="icon icon_bg3 icon-box">
+													<i class="piloz-gear"></i>
+												</div>
+
+													<h4>enjoy it</h4>
+														<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+												</div>
+										</div>
+-->
+                </div>
+
             </div>
-            <div class="ly_a_rbar ly_fr">
-              <div class="ly_title">创新有你团队</div>
-              <div class="ly_intro"> 搭建三创（大创、竞赛、实践）交流分享平台为大学生提供丰富、及时的校内外比赛资讯。本平台旨在解决目前大学生获取比赛信息不完整、不及时，活动组织平台混乱的问题；尤其是解决大学生组队时，供求双方在时间和空间上难以恰好匹配的问题。同时与各院系、学校、老师合作获取第一手比赛资料和往届优秀项目信息…… 
-							</div>
+
+        </section>
+
+
+
+			        <section class="app-shot-one" id="screens">
+            <div class="container-fluid">
+<!--
+                <div class="block-title text-center">
+                    <p>Check Before Choosing</p>
+                    <h3>App Screenshots</h3>
+                </div>
+-->
+							<!-- /.block-title -->
+
+<!--
+                <div class="app-shot-one__carousel owl-theme owl-carousel thm__owl-carousel owl-dot-type1" data-options='{ "loop": true, "margin": 30, "nav": false, "dots": true, "autoWidth": false, "autoplay": true, "smartSpeed": 700, "autoplayTimeout": 5000, "autoplayHoverPause": true, "slideBy": 5, "responsive": {
+                    "0": { "items": 1 },
+                    "480": { "items": 2 },
+                    "600": { "items": 3 },
+                    "991": { "items": 4 },
+                    "1000": { "items": 5 },
+                    "1200": { "items": 5 }
+                }}'>
+-->
+								<div class="app-shot-one__carousel owl-theme owl-carousel thm__owl-carousel owl-dot-type1" data-options='{ "loop": true, "margin":0, "nav": false, "dots": true, "autoWidth": true, "autoplay": true, "smartSpeed": 700, "autoplayTimeout": 5000, "autoplayHoverPause": true, "slideBy": 3, "responsive": {
+                    "0": { "items": 1 },
+                    "480": { "items": 2 },
+                    "600": { "items": 3 },
+                    "991": { "items": 4 },
+                    "1000": { "items": 5 },
+                    "1200": { "items": 5 }
+
+                }}'>
+
+
+                    <div class="item">
+                       <div class="counter_feature_mb">
+						<div class="col-lg-6 col-sm-12 col-xs-12">
+						<div class="counter_img fadeInRight wow">
+							<img src="assets/images/competiton1.png" class="img-fluid" alt="" />
+						</div>
+					  </div>
+
+					<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+						<div class="row text-center">
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+								<div class="single_counter single_counter_mt">
+									<span class="ti-user"></span>
+									<h2 class="counter-num">32652</h2>
+									<h3>浏览量</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="single_counter">
+									<span class="ti-star"></span>
+									<h2 class="counter-num">421</h2>
+									<h3>队伍数量</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="single_counter">
+									<span class="ti-pencil-alt"></span>
+									<h2 class="counter-num" id="123">25160</h2>
+									<h3>标记感兴趣</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+								<div class="single_counter single_counter_mtnone">
+									<span class="ti-support"></span>
+									<h2 class="counter-num">1185</h2>
+									<h3>报名人数</h3>
+								</div>
+							</div><!--- END COL -->
+						</div>	<!--- END ROW -->
+					</div>
+					</div>
+                    </div>
+                    <div class="item">
+                       <div class="counter_feature_mb">
+						<div class="col-lg-6 col-sm-12 col-xs-12">
+						<div class="counter_img fadeInRight wow">
+							<img src="assets/images/competiton2.png" class="img-fluid" alt="" />
+						</div>
+					  </div>
+
+					<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+						<div class="row text-center">
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+								<div class="single_counter single_counter_mt">
+									<span class="ti-user"></span>
+									<h2 class="counter-num">32652</h2>
+									<h3>浏览量</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="single_counter">
+									<span class="ti-star"></span>
+									<h2 class="counter-num">421</h2>
+									<h3>队伍数量</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="single_counter">
+									<span class="ti-pencil-alt"></span>
+									<h2 class="counter-num">25160</h2>
+									<h3>标记感兴趣</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+								<div class="single_counter single_counter_mtnone">
+									<span class="ti-support"></span>
+									<h2 class="counter-num">1185</h2>
+									<h3>报名人数</h3>
+								</div>
+							</div><!--- END COL -->
+						</div>	<!--- END ROW -->
+					</div>
+					</div>
+                    </div>
+                    <div class="item">
+                        <div class="counter_feature_mb">
+						<div class="col-lg-6 col-sm-12 col-xs-12">
+						<div class="counter_img fadeInRight wow">
+							<img src="assets/images/competiton3.png" class="img-fluid" alt="" />
+						</div>
+					  </div>
+
+					<div class="col-lg-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+						<div class="row text-center">
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+								<div class="single_counter single_counter_mt">
+									<span class="ti-user"></span>
+									<h2 class="counter-num">32652</h2>
+									<h3>浏览量</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="single_counter">
+									<span class="ti-star"></span>
+									<h2 class="counter-num">421</h2>
+									<h3>队伍数量</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="single_counter">
+									<span class="ti-pencil-alt"></span>
+									<h2 class="counter-num">25160</h2>
+									<h3>标记感兴趣</h3>
+								</div>
+							</div><!--- END COL -->
+							<div class="col-lg-6 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+								<div class="single_counter single_counter_mtnone">
+									<span class="ti-support"></span>
+									<h2 class="counter-num">1185</h2>
+									<h3>报名人数</h3>
+								</div>
+							</div><!--- END COL -->
+						</div>	<!--- END ROW -->
+					</div>
+					</div>
+                    </div>
+<!--
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-4.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-5.png" alt="Awesome Image" />
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-1.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-2.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-3.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-4.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-5.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-1.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-2.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-3.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-4.png" alt="Awesome Image" />
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/app-shots/app-shot-n-1-5.png" alt="Awesome Image" />
+                    </div>
+-->
+                </div><!-- /.app-shot-one__carousel owl-theme owl-carousel -->
+
+            </div><!-- /.container-fluid -->
+        </section><!-- /.app-shot-one -->
+
+
+
+<!--
+			<script type="text/javascript">
+
+
+			function NumAutoPlusAnimation(targetEle, options) {
+
+				/*可以自己改造下传入的参数，按照自己的需求和喜好封装该函数*/
+				//不传配置就把它绑定在相应html元素的data-xxxx属性上吧
+				options = options || {};
+
+//				var $this = document.getElementsByClassName('counter-num'),
+				var $this = document.getElementById('123')
+					time = options.time || $this.data('time'), //总时间--毫秒为单位
+					finalNum = options.num || $this.data('value'), //要显示的真实数值
+					regulator = options.regulator || 100, //调速器，改变regulator的数值可以调节数字改变的速度
+
+					step = finalNum / (time / regulator),/*每30ms增加的数值--*/
+					count = 0, //计数器
+					initial = 0;
+
+				var timer = setInterval(function() {
+
+					count = count + step;
+
+					if(count >= finalNum) {
+						clearInterval(timer);
+						count = finalNum;
+					}
+					//t未发生改变的话就直接返回
+					//避免调用text函数，提高DOM性能
+					var t = Math.floor(count);
+					if(t == initial) return;
+
+					initial = t;
+
+					$this.innerHTML = initial;
+				}, 30);
+			}
+
+        </script>
+-->
+
+
+
+
+
+
+
+        <section id="testimonials" class="testimonials-one">
+            <div class="testimonials-1-shape-3"
+                style="background-image: url(assets/images/testimonials/testimonials-1-shape-3.png)"></div>
+<!--
+            <div class="testimonials-1-shape-4"
+                style="background-image: url(assets/images/testimonials/testimonials-1-shape-4.png)"></div>
+-->
+            <div class="testimonials-1-shape-5"
+                style="background-image: url(assets/images/testimonials/testimonials-1-shape-5.png)"></div>
+
+            <div class="container">
+<!--
+                <div class="block-title text-center">
+                    <p>What They Says</p>
+                    <h3>动态广场</h3>
+                </div>
+-->
+                <div class="block-title text-center">
+                    <a href="news.html"><p>What They Says</p></a>
+                    <a href="news.html"><h3>动态广场</h3></a>
+
+                </div>
+
+                <div class="accrodion-grp wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s" data-wow-offset="0" data-grp-name="faq-accrodion">
+                    <div class="accrodion active wow fadeIn" data-wow-duration="2s" data-wow-delay="0.1s" data-wow-offset="0">
+                        <div class="accrodion-inner">
+                            <div class="accrodion-title">
+                                <h4>通知 | 中国高校计算机大赛大数据挑战赛</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）；</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div><!-- /.accrodion-inner -->
+                    </div>
+                    <div class="accrodion wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+                        <div class="accrodion-inner">
+                            <div class="accrodion-title">
+                                <h4>通知 | 计算机设计大赛国赛队伍修改资料</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>请参与计算机设计大赛国赛的团队将于6月30日前完成相应评审材料的补充，该部分内容关系到国赛初审的结果，请各队长及时督促。</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div><!-- /.accrodion-inner -->
+                    </div>
+                    <div class="accrodion wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-offset="0">
+                        <div class="accrodion-inner">
+                            <div class="accrodion-title">
+                                <h4>通知 | 移动编程大赛初审结果公布时间</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>移动编程大赛初审将于7月15日结束并给予结果公示。</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div><!-- /.accrodion-inner -->
+                    </div>
+<!--
+                    <div class="accrodion ">
+                        <div class="accrodion-inner">
+                            <div class="accrodion-title">
+                                <h4>How to connect with the support to improve app experience</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>There are many variations of passages of available but majority have alteration in some by inject humour or random words. Lorem ipsum dolor sit amet, error insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+-->
+                </div>
+
             </div>
-            <div class="lyg_clear"></div>
-          </div>
+        </section>
+
+
+
+        <section class="blog-one" id="blog">
+            <div class="blog-1-shape-1" style="background-image: url(assets/images/blog/blog-1-shape-1.png)"></div>
+            <div class="blog-1-shape-2" style="background-image: url(assets/images/blog/blog-1-shape-2.png)"></div>
+            <div class="blog-1-shape-3" style="background-image: url(assets/images/blog/blog-1-shape-3.png)"></div>
+            <div class="container">
+                <div class="block-title text-center">
+                    <p>News And Comments</p>
+                    <h3></h3>
+                </div><!-- /.block-title text-center -->
+<!--                <div class="row">-->
+										<div class="blog">
+									       <div class="blog_single wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+													 <div>
+													 <img src="assets/images/face/face1.jpg" alt="">
+													 <h3><a class="blog_name" href="#">张LL</a></h3>
+													 </div>
+
+                            <div class="blog_content">
+                                <a class="blog_flag" href="#">#报名#</a><a class="blog_flag" href="#">#答疑#</a>
+																<div class="blog_text">
+                                    <p>想请问大家，想参加移动编程大赛是不是最好先修移动编程的课呢？</p>
+                                </div>
+																<div class="blog_meta_all">
+                                    <a class="blog_meta" href="#"><i class="far fa-calendar-alt"></i> 20 May, 2020</a>
+                                    <a class="blog_meta" href="#"><i class="far fa-comments"></i> 4 comments</a>
+																		<a href="#" class="blog_meta blog_btn"><span>Read More</span></a>
+                                </div><!-- /.blog-one__meta -->
+
+                            </div>
+                        </div>
+													<div class="blog_single wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s" data-wow-offset="0">
+													 <div>
+													 <img src="assets/images/face/face7.jpg" alt="">
+													 <h3><a class="blog_name" href="#">一名用户</a></h3>
+													 </div>
+
+                            <div class="blog_content">
+                                <a class="blog_flag" href="#">#报名#</a><a class="blog_flag" href="#">#答疑#</a>
+																<div class="blog_text">
+                                    <p>万能的网页啊，请告诉我，大一萌新没什么基础可以参加计算机设计大赛吗？</p>
+                                </div>
+																<div class="blog_meta_all">
+                                    <a class="blog_meta" href="#"><i class="far fa-calendar-alt"></i> 20 May, 2020</a>
+                                    <a class="blog_meta" href="#"><i class="far fa-comments"></i> 10 comments</a>
+																		<a href="#" class="blog_meta blog_btn"><span>Read More</span></a>
+                                </div><!-- /.blog-one__meta -->
+
+                            </div>
+                        </div>
+													<div class="blog_single wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.4s" data-wow-offset="0">
+													 <div>
+													 <img src="assets/images/face/face8.jpg" alt="">
+													 <h3><a class="blog_name" href="#">戴银银2333</a></h3>
+													 </div>
+
+                            <div class="blog_content">
+                                <a class="blog_flag" href="#">#文案编写#</a><a class="blog_flag" href="#">#经验分享#</a>
+																<div class="blog_text">
+                                    <p>最近写文案有点秃，，，总是改不好，请问大家在写项目文案的详情设计的时候一般都会考虑哪些内容呢？有没有有经验的小伙伴可以给大家分享一下呀。</p>
+                                </div>
+																<div class="blog_meta_all">
+                                    <a class="blog_meta" href="#"><i class="far fa-calendar-alt"></i> 20 May, 2020</a>
+                                    <a class="blog_meta" href="#"><i class="far fa-comments"></i> 2 comments</a>
+																		<a href="#" class="blog_meta blog_btn"><span>Read More</span></a>
+                                </div><!-- /.blog-one__meta -->
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section id="pricing">
+					<div class="container add_top">
+                <div class="block-title text-center">
+                    <p>Works Of Excellent</p>
+                    <h3>优秀作品展示</h3>
+                </div>
+<!--
+								<div class="work_title">
+									<span>大学生创新创业大赛</span>
+								</div>
+-->
+<!--
+						<div class="works_box_line">
+							<div class="work_one wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class=" about_feature about_feature3">
+
+										<div class="icon icon_bg3">
+											<img class="works_face" src="assets/images/face/face7.jpg">
+
+										</div>
+
+										<h4>移动端无线点餐项目</h4>
+										<p>项目简介:<br>
+										本项目主要是依据移动端APP，打造新型无线点餐环境。以及在原有的点餐基础功能之上，增添自定义服务和个性化设置。<br>
+										项目进度：100%</p>
+										<p>项目联系人：XXX</p>
+								</div>
+						 </div>
+
+							<div class="work_one wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class=" about_feature about_feature3">
+
+										<div class="icon icon_bg3">
+											<img class="works_face" src="assets/images/face/face7.jpg">
+
+										</div>
+
+										<h4>移动端无线点餐项目</h4>
+										<p>项目简介:<br>
+										本项目主要是依据移动端APP，打造新型无线点餐环境。以及在原有的点餐基础功能之上，增添自定义服务和个性化设置。<br>
+										项目进度：100%</p>
+										<p>项目联系人：XXX</p>
+								</div>
+						 </div>
+
+							<div class="work_one wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="work_title">
+									<span>大学生创新创业大赛</span>
+								</div>
+						 </div>
+						</div>
+-->
+
+					</div>
+
+        </section><!-- /.brand-one -->
+
+
+
+						<section class="cta-one">
+            <img src="assets/images/shapes/cta-1-shape-1.png" class="cta-one__bg-shape-1" alt="">
+            <img src="assets/images/shapes/cta-1-shape-2.png" class="cta-one__bg-shape-2" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="cat_one_moc wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="cat_one_moc-bg"
+                                style="background-image: url(assets/images/shapes/cta-1-shape-3.png)"></div>
+                            <img class="work_imag" src="assets/images/resources/work_one.jpg" alt="Cat-1-Moc-1 Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="cat_one_content">
+                            <div class="block-title">
+                                <p>第四届大学生创新创业大赛优秀作品——</p>
+                                <h4>基于3D打印的DIY蛋糕房</h4>
+                            </div>
+                            <div class="cat_one_icon-wrap">
+                                <div class="cta-one__icon-single">
+                                    <div class="cta-one__icon">
+                                        <i class="piloz-devices"></i>
+                                    </div>
+                                    <h3>Responsive <br> Design</h3>
+                                </div>
+                                <div class="cta-one__icon-single">
+                                    <div class="cta-one__icon">
+                                        <i class="piloz-networking color-2"></i>
+                                    </div>
+                                    <h3>Online <br>
+                                        Marketing</h3>
+                                </div>
+                            </div>
+                            <div class="cta-one__text">
+                                <p>
+                                  通过研究分析新型个性化蛋糕定制网站与对传统蛋糕产业可
+                                  带来的突破与提升空间设计的一个新型的蛋糕定制网站。
+                                </p>
+                            </div>
+                            <a href="#" class="thm-btn cta-one__btn"><span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+			 <section class="pricing-one">
+            <div class="pricing-one-shape-1" style="background-image: url(assets/images/shapes/pricing-1-shape-1.png)">
+            </div>
+            <div class="container">
+                <div class="block-title text-center">
+                    <p>More Works To Discover</p>
+                    <h3>更多推荐</h3>
+                </div><!-- /.block-title text-center -->
+                <ul class="list-inline text-center switch-toggler-list" role="tablist" id="switch-toggle-tab">
+                    <li class="month active">按时间顺序</li>
+                    <li>
+                        <!-- Rounded switch -->
+                        <label class="switch on">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    <li class="year">按浏览量</li>
+                </ul><!-- /.list-inline -->
+
+                <div class="tabed-content">
+                    <div id="month">
+                        <div class="row">
+                            <div class="col-xl-4 animated fadeInLeft wow" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+                                <div class="pricing-one__single">
+                                    <div class="circle">
+                                        <div class="count">
+                                            <h4>01</h4>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <h2>创新</h2>
+                                        <p>大学生创新创业大赛</p>
+                                    </div>
+                                    <ul class="list-unstyled pricing-one__list">
+                                        <li><i class="fa fa-check"></i>基于C/S的音乐互动平台</li>
+                                        <li><i class="fa fa-check"></i>个人时间管理系统</li>
+                                        <li><i class="fa fa-check"></i>大数据网络流行词分析系统</li>
+																			<li><i class="fa fa-check"></i> 城市地理环境探测新型技术</li>
+                                    </ul>
+                                    <a href="#" class="thm-btn pricing-one__btn"><span>Read More</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 animated fadeIn wow" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+                                <div class="pricing-one__single">
+                                    <div class="circle circle-color-2">
+                                        <div class="count count-color-2">
+                                            <h4>02</h4>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <h2>设计</h2>
+                                        <p>计算机设计大赛</p>
+                                    </div>
+                                    <ul class="list-unstyled pricing-one__list">
+                                        <li><i class="fa fa-check icon-color-2"></i>传统动漫剪影制作</li>
+                                        <li><i class="fa fa-check icon-color-2"></i>高校自媒体数据分析</li>
+                                        <li><i class="fa fa-check icon-color-2"></i>AI智能公交服务</li>
+                                        <li><i class="fa fa-check icon-color-2"></i>新型网络直播管理</li>
+                                    </ul>
+                                    <a href="#" class="thm-btn pricing-one__btn"><span>Read More</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 animated fadeInRight wow" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+                                <div class="pricing-one__single">
+                                    <div class="circle circle-color-3">
+                                        <div class="count count-color-3">
+                                            <h4>03</h4>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <h2>宣传</h2>
+                                        <p>大学生广告设计大赛</p>
+                                    </div>
+                                    <ul class="list-unstyled pricing-one__list">
+                                        <li><i class="fa fa-check icon-color-3"></i>“如梦令”影视宣传计划</li>
+                                        <li><i class="fa fa-check icon-color-3"></i>宝洁最新宣传海报分析</li>
+                                        <li><i class="fa fa-check icon-color-3"></i>古风电影推广分析合集</li>
+                                        <li><i class="fa fa-check icon-color-3"></i>疫情下的公益广告</li>
+                                    </ul>
+                                    <a href="#" class="thm-btn pricing-one__btn"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="year">
+											 <div class="row">
+                            <div class="col-xl-4 animated wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                                <div class="pricing-one__single">
+                                    <div class="circle">
+                                        <div class="count">
+                                            <h4>01</h4>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <h2>创新</h2>
+                                        <p>大学生创新创业大赛</p>
+                                    </div>
+                                    <ul class="list-unstyled pricing-one__list">
+                                        <li><i class="fa fa-check"></i>大数据网络流行词分析系统</li>
+                                        <li><i class="fa fa-check"></i>个人时间管理系统</li>
+                                        <li><i class="fa fa-check"></i>人工智能与垃圾分类</li>
+																			<li><i class="fa fa-check"></i> 基于C/S的音乐互动平台</li>
+                                    </ul>
+                                    <a href="#" class="thm-btn pricing-one__btn"><span>Read More</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 animated fadeIn wow" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                                <div class="pricing-one__single">
+                                    <div class="circle circle-color-2">
+                                        <div class="count count-color-2">
+                                            <h4>02</h4>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <h2>设计</h2>
+                                        <p>计算机设计大赛</p>
+                                    </div>
+                                    <ul class="list-unstyled pricing-one__list">
+                                        <li><i class="fa fa-check icon-color-2"></i>传统动漫剪影制作</li>
+                                        <li><i class="fa fa-check icon-color-2"></i>AI智能公交服务</li>
+                                        <li><i class="fa fa-check icon-color-2"></i>高校自媒体数据分析</li>
+                                        <li><i class="fa fa-check icon-color-2"></i>古风电影与传统文化分析</li>
+                                    </ul>
+                                    <a href="#" class="thm-btn pricing-one__btn"><span>Read More</span></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 animated fadeInRight wow" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0" >
+                                <div class="pricing-one__single">
+                                    <div class="circle circle-color-3">
+                                        <div class="count count-color-3">
+                                            <h4>03</h4>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <h2>宣传</h2>
+                                        <p>大学生广告设计大赛</p>
+                                    </div>
+                                    <ul class="list-unstyled pricing-one__list">
+                                        <li><i class="fa fa-check icon-color-3"></i>“如梦令”影视宣传计划</li>
+                                        <li><i class="fa fa-check icon-color-3"></i>宝洁最新宣传海报分析</li>
+                                        <li><i class="fa fa-check icon-color-3"></i>基于大数据的产品推广计划</li>
+                                        <li><i class="fa fa-check icon-color-3"></i>疫情下的公益广告</li>
+                                    </ul>
+                                    <a href="#" class="thm-btn pricing-one__btn"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="mailchimp-one">
+            <div class="container wow fadeInUp" data-wow-duration="1500ms">
+                <div class="inner-container">
+<!--
+                    <div class="mailchimp-one-title">
+                        <h2>快速开启创新之旅</h2>
+                    </div>
+-->
+                    <form action="#" class="mailchimp-one__form">
+                        <input type="text" placeholder="输入你想加入的比赛或队伍" name="email">
+                        <button class="thm-btn mailchimp-one__btn" type="submit"><span>Search Now</span></button>
+                        <!-- /.thm-btn -->
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="site-footer-bg" style="background-image: url(assets/images/resources/footer-bg-shape-1.png)">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-upper text-center">
+                            <div class="footer-logo">
+                                <img src="assets/images/resources/logo-1.png" alt="Footer Logo">
+                            </div>
+<!--
+                            <ul class="footer-widget__social">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="color-1"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#" class="color-2"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#" class="color-3"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+-->
+<!--
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Screens</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container text-center">
+                    <p>© copyright 2020 by <a href="#">us</a></p>
+                </div><!-- /.container -->
+            </div>
+        </footer>
+
+    </div><!-- /.page-wrapper -->
+
+
+
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
         </div>
-      </div>
-      <!--客户见证-->
-      <div class="ly_rbar ly_fr">
-        <div class="ly_news_bar">
-          <h2><a class="ly_more" href="#">查看更多</a><span>近期资讯</span> <em>NEWS</em> </h2>
-          <div class="lyg_blank15"></div>
-          <div class="ly_content">
-            <div class="ly_item">
-              <div class="ly_n_lbar ly_fl">
-                <div class="ly_pic"><a href="#" > <img src="images/8.png" width="145" height="103" /></a></div>
-              </div>
-              <div class="ly_n_rbar ly_fr">
-                <h3><a href="#" >大学生创新创业大赛</a></h3>
-                <div class="ly_date">2020/05/12</div>
-                <div class="ly_intro"> 中国“互联网+”大学生创新创业大赛，以“‘互联网+’成就梦想，创新创业开辟未来”为主题，由教育部与有关部委和吉林省人民政府共同主办。大赛旨在深化高等教育综合改革，激发大学生的创造力，培养造就“大众创业、万众创新”的主力军……</div>
-              </div>
-              <div class="lyg_clear"></div>
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+                <a href="#" class="side-menu__toggler side-menu__close-btn">
+                    <img src="assets/images/shapes/close-1-1.png" alt="">
+                </a>
             </div>
-            <div class="ly_line"></div>
-            <div class="ly_item">
-              <div class="ly_n_lbar ly_fl">
-                <div class="ly_pic"><a href="#" > <img src="images/5.png" width="145" height="103" /></a></div>
-              </div>
-              <div class="ly_n_rbar ly_fr">
-                <h3><a href="#" >计算机设计大赛</a></h3>
-                <div class="ly_date">2020/05/26</div>
-                <div class="ly_intro"> “大赛”以“三安全”为前提，以“三服务”为目标，以“三公”为生命线，从筹备开赛到现在，经过十多年来的艰苦努力，赢得到了参赛师生的支持和信任。支持与主办这一“大赛”，使师生受益，使学校受益，使社会受益，使国家受益。</div>
-              </div>
-              <div class="lyg_clear"></div>
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+            <div class="side-menu__content">
+                <p>Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the
+                    industry's stanard dummy text ever.</p>
+                <p>
+                    <a href="mailto:needhelp@apton.com">needhelp@apton.com</a><br>
+                    <a href="tel:888-999-0000">888 9990000</a>
+                </p>
+                <div class="side-menu__social">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="lyg_clear"></div>
     </div>
-		
-    <div class="lyg_blank25"></div>
-		
-    <!--动态展示-->
-    <div class="ly_main_b">
-      <div class="ly_product_bar gundong_">
-        <h2><a class="ly_more" href="#">查看更多</a><span>动态展示</span> <em>MESSEAGE SHOW</em> </h2>
-      </div>
-    </div>
-    <!-- 动态 -->
-    <div class="news-2">
-      <div class="l">
-        <div id="lib_Tab1">
-          <div class="lib_Menubox lib_tabborder">
-            <ul>
-              <li id="one1" onMouseOver="setTab('one',1,4)" class="hover"><a href="">答疑</a></li>
-              <li id="one2" onMouseOver="setTab('one',2,4)" class=""><a href="">组队</a></li>
-              <li id="one3" onMouseOver="setTab('one',3,4)" class=""><a href="">新闻</a></li>
-              <li id="one4" onMouseOver="setTab('one',4,4)" class=""><a href="">关注内容</a></li>
-            </ul>
-          </div>
-          <div class="lib_Contentbox lib_tabborder">
-            <div id="con_one_1" style="display: block;">
-              <div class="con_l"> <a href=""><img src="images/000.jpg" width="320" height="230"></a> </div>
-              <div class="con_r">
-                <ul>
-                  <li><strong><a href="">参加大创有哪些注意事项吗？</a></strong> <span><a href="">阅读量：220</a></span></li>
-                  <li><strong><a href="">指导老师应该怎么找？</a></strong> <span><a href="">阅读量：316</a></span></li>
-                  <li><strong><a href="">软件设计的文档模板应该在哪里找？</a></strong> <span><a href="">阅读量：119</a></span></li>
-                </ul>
-              </div>
-            </div>
-            <div id="con_one_2" style="display: none;">
-              <div class="con_l"> <a href="b"><img src="images/000.jpg" width="320" height="230"></a> </div>
-              <div class="con_r">
-                <ul>
-                  <li><strong><a href="">计算机设计大赛最新组队信息 </a></strong> <span> <a href="">目前总队伍数量：219 </a></span></li>
-                  <li><strong><a href="">程序设计大赛预组队广场</a></strong> <span> <a href="">目前队伍数量：54</a></span></li>
-                  <li><strong><a href="">大学生创新创业组队（待开启）</a></strong> <span> <a href="">目前队伍数量：0</a></span></li>
-                </ul>
-              </div>
-            </div>
-            <div id="con_one_3" style="display: none;">
-              <div class="con_l"> <a href=""><img src="images/001.jpg" width="320" height="230"></a> </div>
-              <div class="con_r">
-                <ul>
-                  <li><strong><a href="">计算机设计大赛人工智能类作品提交注意事项</a></strong> <span><a href="">文末附加通知文件下载链接。</a></span></li>
-                  <li><strong><a href=""></a></strong> <span><a href=""></a></span></li>
-                  <li><strong><a href=""></a></strong> <span><a href=""></a></span></li>
-                </ul>
-              </div>
-            </div>
-            <div id="con_one_4" style="display: none;">
-              <div class="con_l"> <a href=""><img src="images/001.jpg" width="320" height="230"></a> </div>
-              <div class="con_r">
-                <ul>
-                  <li><strong><a href=""></a></strong> <span><a href=""></a></span></li>
-                  <li><strong><a href=""></a></strong> <span><a href=""></a></span></li>
-                  <li><strong><a href=""></a></strong> <span><a href=""></a></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="r">
-        <div id="lib_Tab1">
-          <div class="lib_Menubox lib_tabborder">
-            <ul>
-              <li id="two1" onMouseOver="setTab('two',1,4)" class="hover"><a href="">猜你感兴趣</a></li>
-              <li id="two2" onMouseOver="setTab('two',2,4)" class=""><a href="">更多热搜</a></li>
-            </ul>
-          </div>
-          <div class="lib_Contentbox lib_tabborder">
-            <div id="con_two_1" style="display: block;">
-              <ul>
-                <li><strong><a href="">这些关于UI设计的优秀案例值得你收藏</a></strong> <span><a href="">一个UI设计师应该从何开始？常用的UI设计工具...</a></span></li>
-                <li><strong><a href="">五人一队，有哪些需要注意的事项</a></strong> <span><a href="">据说,更多人选择这样的组队搭配...</a></span></li>
-                <li><strong><a href="">从大一参加程序设计大赛应该做哪些准备?</a></strong> <span><a href="">...</a></span></li>
-              </ul>
-            </div>
-            <div id="con_two_2" style="display: none;">
-              <ul>
-                <li><strong><a href="">历届优秀选题总结</a></strong> <span>2020/04/18<a href=""></a></span></li>
-                <li><strong><a href="">暑期实践三大类</a></strong> <span> 2020/05/27<a href=""></a></span></li>
-                <li><strong><a href="">撰写文档常见问题</a></strong> <span> <a href="">...</a></span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="lyg_blank25"></div>
-<div class="lyg_blank25"></div>
-<!--底部-->
-<div id="ly_footer" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_lbar ly_fl">
-      <div class="ly_logo"> <img src="images/f_logo.png" /> </div>
-    </div>
-    <div class="ly_cbar ly_fl">
-      <div class="ly_copyright">版权所有：&nbsp;&nbsp;&nbsp;&nbsp;地址：<br/>
-        电话：xxx-xxxx&nbsp;&nbsp;&nbsp;&nbsp;手机：&nbsp;&nbsp;&nbsp;&nbsp;联系人： </div>
-      <div class="lyg_support"></div>
-    </div>
-    <div class="ly_rbar ly_fr">
-      <div class="ly_nav"> <a href="#">更多留言</a>| <a href="#">联系我们</a></div>
-    </div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
+
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
+
 </html>

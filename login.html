@@ -1,136 +1,101 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zxx">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>登录</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<script type="text/javascript" src="../js/jquery-1.8.2.min.js" ></script>
-<script type="text/javascript">
+	<title>Home</title>
 	
-$("#submit_button").click(function(){
-	console.log('1111111111111111');
-//	var form = new FormData();
-//	form.append("email", "1791781644@qq.com");
-//	form.append("password", "123456");
-//
-//	var settings = {
-//  	"url": "http://creative.icube.fun/login/",
-//  	"method": "POST",
-//  	"timeout": 0,
-//  	"processData": false,
-//		"mimeType": "multipart/form-data",
-//  	"contentType": false,
-//  	"data": form
-//	};
-//
-//	$.ajax(settings).done(function (response) {
-//  	console.log(response);
-//	});
-})
-	
-</script>
-<!--<script type="text/javascript" src="js/picmain.js" ></script>-->
-<!--[if IE 6]>
-<script type='text/javascript' src='js/dd_belatedpng.js' ></script>
-<![endif]-->
+	 <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content=""
+	/>
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link rel="stylesheet" href="assets/css/login-style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+	<!-- web-fonts -->
+	
+	<!-- //web-fonts -->
 </head>
+
 <body>
+	<!-- bg effect -->
+	<div id="bg">
+		<canvas></canvas>
+		<canvas></canvas>
+		<canvas></canvas>
+	</div>
+	<!-- //bg effect -->
+	<!-- title -->
 	
-<div id="ly_header" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="../default.htmll"> <img src="images/logo.png" /> <span></span> </a></div>
-    </div>
-    <div class="ly_cbar ly_fr">
-      <div class="ly_top">
-        <div id="ly_search">
-          <form action="/search.html" method="get">
-            <input class="ly_txt" type="text" name="keyword" placeholder="输入关键词快速组队" value="" />
-            <input class="ly_btn" type="submit" value="组队" />
-          </form>
-        </div>
-      </div>
-      <div class="ly_bot">
-        <div class="ly_hot"> 热门搜索： <a href="#">计算机设计大赛</a><a href="#">AI</a><a href="#">数据分析</a><a href="#">往届优秀文档</a></div>
-      </div>
-    </div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
-<!--导航-->
-<div id="ly_menu">
-  <div class="ly_wrap">
-    <div class="lyg_fir"><a href="index.html">首页</a></div>
-    <div class="lyg_fir"><a href="">近期资讯</a></div>
-    <div class="lyg_fir"><a href="news.html">动态中心</a></div>
-    <div class="lyg_fir  lyg_current"><a href="about.html">个人中心</a></div>
-	  <div class="lyg_fir"><a href="">往届作品展示</a></div>
-    <div class="lyg_fir"><a href="">联系我们</a></div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
-<!-- banner -->
-<!--<div id="lyg_sub_banner"><img src="images/p_banner.png" /> </div>-->
+	<h1>创新有你</h1>
+	<!-- //title -->
+	<!-- content -->
+	<div class="sub-main-w3">
+		<form action="#" method="post">
+		  <h2>Login now<em class="fa fa-long-arrow-down"></em> </h2>
+		  <div class="form-style-agile">
+		    <label> <em class="fa fa-user"></em> Email</label>
+		    <input placeholder="Name" name="Name" type="text"  required="">
+			</div>
+			<div class="form-style-agile">
+				<label>
+					<i class="fa fa-unlock-alt"></i>
+					password
+			  </label>
+				<input placeholder="password" name="password" type="password" required="">
+			</div>
+			<!-- checkbox -->
+			<div class="wthree-text">
+				<ul>
+					<li>
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>Stay Signed In</span>
+						</label>
+					</li>
+					<li>
+						<a href="#">Forgot Password?</a>
+					</li>
+				</ul>
+			<div class= "but"><a class="but_a" href="index.html">登录</a></div>
+			<!-- //checkbox -->
+<!--			<input type="submit" value="Log in" onclick="index.html" />-->
+		</form>
+	</div>
+	<!-- //content -->
 
-<div class="ly_page ly_min">
-  <div class="ly_wrap">
-    <div class="lyg_page_box">
-      <div class="lyg_lpage">
-        <div id="lyg_left_bar">
-          <h2>个人中心</h2>
-          <dl>
-            <dt> <a href="#" >个人信息</a> </dt>
-            <dt> <a href="#" >个性标签与技能</a> </dt>
-            <dt> <a href="#" >我的队伍</a> </dt>
-            <dt> <a href="#" >我的动态</a> </dt>
-            <dt> <a href="#" >兴趣与收藏</a> </dt>
-          </dl>
-        </div>
-      </div>
-      <div class="lyg_rpage">
-				
-				<div class="person_face">
-					<img class="face" src="images/profilephoto.png">
-					<label class="person_id">请先完成登录!</label>
-				</div>
-				<div class="lyg_blank25"></div>
-				<div class="all_inputbox">
-					<div class="login_email"><label class="login_label">邮箱账号：</label>
-					<input class="login_input" type="text" /></div>
-					<div class="lyg_blank25"></div>
-					<div class="login_email"><label class="login_label">密码：&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</label>
-					<input class="login_input" type="password" /></div>
-					<div class="lyg_blank25"></div>
-					<div id="submit_button">
-						<button class="login_submit">登录</button><button class="register_submit">注册</button>
-					</div>
-					<label class="login_question">忘记密码 | 验证码登录</label>
-				</div>
-				
-				<div class="lyg_blank25"></div>
+	<!-- copyright -->
+<!--
+	<div class="footer">
+		<p>Copyright &copy; 2018.Company name All rights reserved.</p>
+	</div>
+-->
+	<!-- //copyright -->
 
-      </div>
-      <div class="lyg_clear"></div>
-    </div>
-  </div>
-</div>
-<!--底部-->
-<div id="ly_footer" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_lbar ly_fl">
-      <div class="ly_logo"> <img src="images/f_logo.png" /> </div>
-    </div>
-    <div class="ly_cbar ly_fl">
-      <div class="ly_copyright">版权所有：&nbsp;&nbsp;&nbsp;&nbsp;地址：<br/>
-        电话：xxx-xxxx&nbsp;&nbsp;&nbsp;&nbsp;手机：&nbsp;&nbsp;&nbsp;&nbsp;联系人： </div>
-      <div class="lyg_support"></div>
-    </div>
-    <div class="ly_rbar ly_fr">
-      <div class="ly_nav"> <a href="#">更多留言</a>| <a href="#">联系我们</a></div>
-    </div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
+	<!-- Jquery -->
+	<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<!-- //Jquery -->
+
+	<!-- effect js -->
+	<script src="assets/js/canva_moving_effect.js"></script>
+	<!-- //effect js -->
+
 </body>
+
 </html>

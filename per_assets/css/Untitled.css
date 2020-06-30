@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.toolbar {
+	display: flex;
+	flex-direction:row;
+	align-content: center;
+	justify-content: center;
+}
+
+.tools{
+	
+}
+
+.content{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+.in_content{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 75%;
+}
+
+.card{
+	display: flex;
+	flex-direction: row;
+}
+.card-face{
+	width: 40%;
+}
+.face{
+	border-radius: 100%;
+	max-width: 100%;
+  max-height: 100%;
+}
+
+.face-text{
+	margin-left: 20px;
+}
+
+.tags-img{
+	max-width: 100%;
+  max-height: 100%;
+}

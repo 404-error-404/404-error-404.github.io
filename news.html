@@ -1,181 +1,489 @@
-﻿
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>动态中心</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<!--[if IE 6]>
-<script type='text/javascript' src='js/dd_belatedpng.js' ></script>
-<![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态广场</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <!-- plugin scripts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/piloz-icons.css">
+
+    <!-- theme styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+	  <link rel="stylesheet" href="assets/css/information-rate.css">
+		<link rel="stylesheet" href="assets/css/information-detail.css">
+		<link rel="stylesheet" href="assets/css/news-style.css">
+		<!--	图标-->
+<!--		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext" rel="stylesheet"> -->
 </head>
-<body>
-<div id="ly_header" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_lbar ly_fl">
-      <div id="ly_logo"><a href="default.htmll"> <img src="images/logo.png" /> <span></span> </a></div>
-    </div>
-    <div class="ly_rbar ly_fr">
-      <div class="ly_tel">
-      </div>
-    </div>
-    <div class="ly_cbar ly_fr">
-      <div class="ly_top">
-        <div id="ly_search">
-          <form action="/search.html" method="get">
-            <input class="ly_txt" type="text" name="keyword" placeholder="输入关键词快速组队" value="" />
-            <input class="ly_btn" type="submit" value="组队" />
-          </form>
-        </div>
-      </div>
-      <div class="ly_bot">
-        <div class="ly_hot"> 热门搜索： <a href="#">计算机设计大赛</a><a href="#">AI</a><a href="#">数据分析</a><a href="#">往届优秀文档</a></div>
-      </div>
-    </div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
-	<div class="header_all">
-	<!--导航-->
-<div id="ly_menu">
-  <div class="ly_wrap">
-    <div class="lyg_fir"><a href="index.html">首页</a></div>
-    <div class="lyg_fir"><a href="">近期资讯</a></div>
-    <div class="lyg_fir lyg_current"><a href="news.html">动态中心</a></div>
-    <div class="lyg_fir"><a href="about.html">个人中心</a></div>
-	  <div class="lyg_fir"><a href="product.html">往届作品展示</a></div>
-    <div class="lyg_fir"><a href="">联系我们</a></div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
-<!-- banner -->
-<div id="lyg_sub_banner"><img src="images/p_banner.png" /> </div>
-	</div>
 
-	
-	
-<div class="ly_page ly_min">
-  <div class="ly_wrap">
-    <div class="lyg_page_box">
-      <div class="lyg_lpage">
-        <div id="lyg_left_bar">
-          <h2>动态中心</h2>
-          <dl>
-            <dt> <a href="#" >全部动态</a> </dt>
-            <dt> <a href="#" >常见答疑</a> </dt>
-            <dt> <a href="#" >组队资讯</a> </dt>
-            <dt> <a href="#" >新闻通知</a> </dt>
-            <dt> <a href="#" >关注内容</a> </dt>
-          </dl>
-        </div>
-      </div>
-      <div class="lyg_rpage">
-        <div class="lyg_rpage_box">
-          <div class="lyg_page_title">
-<!--            <h2>新闻中心</h2>-->
-            <div id="lyg_breadcrumb"> <a class="ly_home" href="index.html">首页</a> <font>></font> <span class="lyg_current">动态中心</span> </div>
-            <div class="lyg_clear"></div>
-          </div>
-          <div id="lyg_news" class="lyg_container_content">
-            <div id="lyg_news_0">
-              <div class="lyg_item lyg_top">
-                <div class="lyg_lbar"> <a href="#" > <img src="images/1.png" width="270" height="174" /> </a> </div>
-                <div class="lyg_rbar">
-                  <h3> <a href="#" >SILIIE</a> </h3>
-                  <div class="lyg_intro">诚招队友帖，目前队伍三人，需要一位可以帮忙撰写文案的同学加入，要求认真负责就好~</div>
-                  <div class="lyg_date"> <span>来自：admin</span> 更新时间：2020/05/17 </div>
-									<div class="buttons">
-										<div class="button"><span>点赞</span><span>13</span></div>
-										<div class="button"><span>转发</span><span>3</span></div>
-										<div class="button"><span>评论</span><span>1</span></div>
+<body>
+
+    <div class="preloader">
+        <img src="assets/images/loader.png" height="100" class="preloader__image" alt="">
+    </div><!-- /.preloader -->
+
+    <div class="page-wrapper">
+        <header class="site-header-one stricky site-header-one__fixed-top">
+            <div class="container-fluid">
+                <div class="site-header-one__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-1-1.png" width="129" alt="">
+                    </a>
+                    <span class="side-menu__toggler"><i class="fa fa-bars"></i></span><!-- /.side-menu__toggler -->
+                </div><!-- /.site-header-one__logo -->
+                <div class="main-nav__main-navigation">
+                    <ul class="main-nav__navigation-box one-page-scroll-menu">
+                        <li class="scrollToLink"><a href="#home">动态广场</a></li>
+												<li class="scrollToLink"><a href="#notice">通知</a></li>
+                        <li class="scrollToLink"><a href="#team">组队</a></li>
+										 		<li class="scrollToLink"><a href="#question">答疑</a></li>
+                        <li class="scrollToLink"><a href="#news">新闻</a></li>
+
+											
+<!--                    <li class="scrollToLink"><a href="#screens">Screens</a></li>
+                        <li class="dropdown  scrollToLink">
+                            <a href="#blog">News</a>
+                            <ul>
+                                <li><a href="blog.html">News</a></li>
+                                <li><a href="blog-details.html">News Details</a></li>
+                            </ul>
+                        </li>-->
+                    </ul><!-- /.main-nav__navigation-box -->
+                </div><!-- /.main-nav__main-navigation -->
+<!--							个人中心的链接放在这里-->
+                <div class="main-nav__right">
+<!--                    <a href="#" class="thm-btn"><span>个人中心</span></a>-->
+										<a href="#" class="thm-btn"><span>发布动态</span></a>
+                </div><!-- /.main-nav__right -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.site-header-one -->
+
+        <section id="home">
+					<div class="banner-one__bg" style="background-image: url(assets/images/banner/banner-bg-1.png);"></div>
+					<div class="news-content">
+						<div class="news-header wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">		
+							<img class="news-face face-margin" src="assets/images/face/face1.jpg" alt="">
+							
+							<div class="news-face-detail">
+								<div class="news-face-name"><a class="blog_name" href="#">YY银银</a></div>
+								<a class="blog_meta" href="#"><i class="far fa-calendar-alt"></i> 我发布的</a>
+                <a class="blog_meta" href="#"><i class="far fa-comments"></i> 我的评论与喜爱</a> 
+								<a class="blog_meta" href="#"><i class="far"></i> 我关注的</a>
+
+							</div>
+              
+						</div>
+						
+					</div>
+					<div class="news-content">
+												
+						<!--搜索框-->
+						<div class="news-header-search wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+							<input type="text" class="search_input" />
+							<label class= "search-button"><i class="far fa-search"></i> 搜索 </label>
+						</div>
+					</div>
+
+        </section>
+
+					<!--通知部分-->
+        <section id="notice">
+					
+				<!--通知标题-->
+					<div class="news-all-content red-border">
+						<div class="all-content-title">
+							<h3 class="title-ch">通知 </h3>
+							<a class="blog_meta title-en" href="#"><i class="far"></i> Notice</a>
+						</div>
+					</div>
+					
+				<!--通知内容-->
+					<div class="news-all-content red-border">
+						<div class="all-content">
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-title">
+									<div class="title-ch"> 通知 | 中国高校计算机大赛大数据挑战赛 </div>
+									<a class="blog_meta title-en" href="#"><i class="far"></i> 置顶</a>
+								</div>
+
+								<div class="one-text"><br>请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								
+						
+								<div class="one-comment">
+									<a class="blog_meta" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                	<a class="blog_meta" href="#"><i class="far fa-comments"></i> 评论 5</a> 
+									<a class="blog_meta" href="#"><i class="far fa-eye"></i> 已阅 32</a>
+								</div>
+							</div>
+							
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-title">
+									<div class="title-ch"> 通知 | 中国高校计算机大赛大数据挑战赛 </div>
+<!--									<a class="blog_meta title-en" href="#"><i class="far"></i> 置顶</a>-->
+								</div>
+
+								<div class="one-text"><br>请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								
+						
+								<div class="one-comment">
+									<a class="blog_meta" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                	<a class="blog_meta" href="#"><i class="far fa-comments"></i> 评论 5</a> 
+									<a class="blog_meta" href="#"><i class="far fa-eye"></i> 已阅 32</a>
+								</div>
+							</div>
+						
+							
+							
+						</div>
+					</div>
+        </section>
+			
+
+
+				<!--组队部分-->
+        <section id="team" class="team-section">
+						<img  class="blog-1-shape-1" src="assets/images/blog/blog-1-shape-1.png"  alt="" />
+					
+					
+        	<!--标题-->
+					<div class="news-all-content blue-border">
+						<div class="all-content-title">
+							<h3 class="title-ch">组队 </h3>
+							<a class="blog_meta_blue title-en" href="#"><i class="far"></i> Team</a>
+						</div>
+					</div>
+					
+				<!--内容-->
+					<div class="news-all-content blue-border">
+						<div class="all-content">
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-per-card">
+									<div class="one-face">
+									<img class="news-face" src="assets/images/face/face1.jpg" alt="">
+									<div class="face-ch">用户名称XX</div>
 									</div>
 									
-                </div>
-                <div class="lyg_clear"></div>
-              </div>
-              <div class="lyg_item ">
-                <div class="lyg_lbar"> <a href="#" > <img src="images/2.png" width="270" height="174" /></a> </div>
-                <div class="lyg_rbar">
-                  <h3> <a href="#" >戴银银</a> </h3>
-                  <div class="lyg_intro">今天是要写完开发文档的最后一天了！ </div>
-                  <div class="lyg_date"> <span>来自：admin</span> 更新时间：2020/05/17 </div>
-									<div class="buttons">
-										<div class="button"><span>点赞</span><span>7</span></div>
-										<div class="button"><span>转发</span><span>0</span></div>
-										<div class="button"><span>评论</span><span>5</span></div>
+									<div>
+										<div class="one-text ml-1">请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）
+										</div>
+										<div class="one-tetx-tags ml-1">
+											<a class="blog_flag font-s" href="#">招募条件： #报名#</a>
+											<a class="blog_flag font-s" href="#">#答疑#</a>
+										</div>
 									</div>
-                </div>
-                <div class="lyg_clear"></div>
-              </div>
-              <div class="lyg_item ">
-                <div class="lyg_lbar"> <a href="#" > <img src="images/6.png" width="270" height="174" /></a> </div>
-                <div class="lyg_rbar">
-                  <h3> <a href="#" >好的小白</a> </h3>
-                  <div class="lyg_intro">请教各位，有比较懂Vue的大佬吗？有个小小的问题想私戳一下。</div>
-                  <div class="lyg_date"> <span>来自：admin</span> 更新时间：2020/05/17 </div>
-									<div class="buttons">
-										<div class="button"><span>点赞</span><span>3</span></div>
-										<div class="button"><span>转发</span><span>0</span></div>
-										<div class="button"><span>评论</span><span>12</span></div>
+								</div>
+								
+								<div class="one-per-addinfo">
+									<div class="title-ch">
+										<h6>指导老师：XXX<br>参与比赛：XXXXXXXXX<br>队伍人数：<span>4/5</span></h6>
 									</div>
-                </div>
-                <div class="lyg_clear"></div>
-              </div>
-              <div class="lyg_item ">
-                <div class="lyg_lbar"> <a href="#" > <img src="images/4.png" width="270" height="174" /></a> </div>
-                <div class="lyg_rbar">
-                  <h3> <a href="#" >红红火火恍恍惚惚</a> </h3>
-                  <div class="lyg_intro">想问一下大家写参赛文档要注意些什么细节呢？</div>
-                  <div class="lyg_date"> <span>来自：admin</span> 更新时间：2020/05/17 </div>
-									<div class="buttons">
-										<div class="button"><span>点赞</span><span>5</span></div>
-										<div class="button"><span>转发</span><span>0</span></div>
-										<div class="button"><span>评论</span><span>3</span></div>
+									<div class="title-en">
+										<img class="news-faces" src="assets/images/face/face1.jpg" alt="">
+										<img class="news-faces" src="assets/images/face/face1.jpg" alt="">
+										<img class="news-faces" src="assets/images/face/face1.jpg" alt="">
 									</div>
-                </div>
-                <div class="lyg_clear"></div>
-              </div>
-              <div class="lyg_item ">
-                <div class="lyg_lbar"> <a href="#" > <img src="images/10.png" width="270" height="174" /></a> </div>
-                <div class="lyg_rbar">
-                  <h3> <a href="#" >┏┛┗┓...(((m -__-)m</a> </h3>
-                  <div class="lyg_intro"></div>
-                  <div class="lyg_date"> <span>来自：admin</span> 更新时间：2020/05/17 </div>
-									<div class="buttons">
-										<div class="button"><span>点赞</span><span>3</span></div>
-										<div class="button"><span>转发</span><span>1</span></div>
-										<div class="button"><span>评论</span><span>1</span></div>
+								</div>
+								
+<!--
+								<div class="row">
+									<div class="col-xl-3 col-md-6"><a class="blog_meta_blue" href="#"><i class="far fa-flag"></i>申请入队</a></div>
+									<div class="col-xl-3 col-md-6"><a class="blog_meta_blue" href="#"><i class="far fa-baseball"></i>了解详情</a></div>
+								</div>
+-->
+
+								
+								<div class="one-comment-2">
+									<div class="comment-btn mr-1">
+										<a class="blog_meta_blue" href="#"><i class="far fa-flag"></i>申请入队</a>
 									</div>
+											
+									<div class="comment-btn ml-1">
+										<a class="blog_meta_blue" href="#"><i class="far fa-baseball"></i>了解详情</a> 
+									</div>
+                			
+
+								</div>
+							</div>
+							
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-per-card">
+									<div class="one-face">
+									<img class="news-face" src="assets/images/face/face1.jpg" alt="">
+									<div class="face-ch">用户名称XX</div>
+									</div>
+									
+									<div>
+										<div class="one-text l-1">请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								</div>
+								</div>
+								<div class="one-comment">
+											<a class="blog_meta_blue" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                			<a class="blog_meta_blue" href="#"><i class="far fa-comments"></i> 评论 5</a> 
+											<a class="blog_meta_blue" href="#"><i class="far fa-eye"></i> 点赞 32</a>
+								</div>
+							</div>
+						
+							
+							
+						</div>
+					</div>
+        </section>
+
+			
+			
+			
+			<!--答疑部分-->
+        <section id="question" class="question-section">	
+					
+        	<!--标题-->
+					<div class="news-all-content red-border">
+						<div class="all-content-title">
+							<h3 class="title-ch">答疑 </h3>
+							<a class="blog_meta title-en" href="#"><i class="far"></i> Team</a>
+						</div>
+					</div>
+					
+				<!--内容-->
+					<div class="news-all-content red-border">
+						<div class="all-content">
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-per-card">
+									<div class="one-face">
+									<img class="news-face" src="assets/images/face/face1.jpg" alt="">
+									<div class="face-ch">用户名称XX</div>
+									</div>
+									
+									<div>
+										<div class="one-text l-1">请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								</div>
+								</div>
+								<div class="one-comment">
+											<a class="blog_meta" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                			<a class="blog_meta" href="#"><i class="far fa-comments"></i> 有效回答 5</a> 
+											<a class="blog_meta" href="#"><i class="far fa-eye"></i> 点赞 32</a>
+								</div>
+							</div>
+							
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-per-card">
+									<div class="one-face">
+									<img class="news-face" src="assets/images/face/face1.jpg" alt="">
+									<div class="face-ch">用户名称XX</div>
+									</div>
+									
+									<div>
+										<div class="one-text l-1">请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								</div>
+								</div>
+								<div class="one-comment">
+											<a class="blog_meta" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                			<a class="blog_meta" href="#"><i class="far fa-comments"></i> 有效回答 5</a> 
+											<a class="blog_meta" href="#"><i class="far fa-eye"></i> 点赞 32</a>
+								</div>
+							</div>
+						
+							
+							
+						</div>
+					</div>
+        </section>
+
+			
+       <!--新闻部分-->
+        <section id="news" class="news-section">
+					  <img src="assets/images/shapes/cta-1-shape-2.png" class="cta-one__bg-shape-2" alt="">
+					
+        	<!--标题-->
+					<div class="news-all-content yellow-border">
+						<div class="all-content-title">
+							<h3 class="title-ch">新闻 </h3>
+							<a class="blog_meta_yellow title-en" href="#"><i class="far"></i> News</a>
+						</div>
+					</div>
+					
+				<!--内容-->
+					<div class="news-all-content yellow-border">
+						<div class="all-content">
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-title">
+									<div class="title-ch"> 通知 | 中国高校计算机大赛大数据挑战赛 </div>
+								</div>
+
+								<div class="one-text"><br>请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								
+						
+								<div class="one-comment">
+									<a class="blog_meta_yellow" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                	<a class="blog_meta_yellow" href="#"><i class="far fa-comments"></i> 评论 5</a> 
+									<a class="blog_meta_yellow" href="#"><i class="far fa-eye"></i> 浏览 32</a>
+								</div>
+							</div>
+							
+							
+							<div class="content-notice-one wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s" data-wow-offset="0">
+								<div class="one-title">
+									<div class="title-ch"> 通知 | 中国高校计算机大赛大数据挑战赛 </div>
+<!--									<a class="blog_meta title-en" href="#"><i class="far"></i> 置顶</a>-->
+								</div>
+
+								<div class="one-text"><br>请参与中国高校计算机大赛大数据挑战赛的同学请在6月31日下午三点准时进入腾讯会议进行统一比赛辅导（会议号见比赛通知群）</div>
+								
+						
+								<div class="one-comment">
+									<a class="blog_meta_yellow" href="#"><i class="far fa-arrow-alt-circle-left"></i> 转发 5</a>
+                	<a class="blog_meta_yellow" href="#"><i class="far fa-comments"></i> 评论 5</a> 
+									<a class="blog_meta_yellow" href="#"><i class="far fa-eye"></i> 浏览 32</a>
+								</div>
+							</div>
+						
+							
+							
+						</div>
+					</div>
+        </section>
+			
+
+        <section class="mailchimp-one">
+            <div class="container wow fadeInUp" data-wow-duration="1500ms">
+                <div class="inner-container">
+<!--
+                    <div class="mailchimp-one-title">
+                        <h2>快速开启创新之旅</h2>
+                    </div>
+-->
+                    <form action="#" class="mailchimp-one__form">
+                        <input type="text" placeholder="输入你想加入的比赛或队伍" name="email">
+                        <button class="thm-btn mailchimp-one__btn" type="submit"><span>Search Now</span></button>
+                        <!-- /.thm-btn -->
+                    </form>
                 </div>
-                <div class="lyg_clear"></div>
-              </div>
             </div>
-            <div class="lyg_blank25"></div>
-            <div class="Page clearfix"> <span>46 条记录 1/6 页</span> <a href="">下一页</a> <span class="current">1</span> <a href="">&nbsp;2&nbsp;</a> <a href="">&nbsp;3&nbsp;</a> <a href="">&nbsp;4&nbsp;</a> <a href="">&nbsp;5&nbsp;</a> <a href="">下5页</a> <a href="">末页</a> </div>
-          </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="site-footer-bg" style="background-image: url(assets/images/resources/footer-bg-shape-1.png)">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-upper text-center">
+                            <div class="footer-logo">
+                                <img src="assets/images/resources/logo-1.png" alt="Footer Logo">
+                            </div>
+<!--
+                            <ul class="footer-widget__social">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="color-1"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#" class="color-2"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#" class="color-3"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+-->
+<!--
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Features</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Screens</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container text-center">
+                    <p>© copyright 2020 by <a href="#">us</a></p>
+                </div><!-- /.container -->
+            </div>
+        </footer>
+
+    </div><!-- /.page-wrapper -->
+
+
+	
+					
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
         </div>
-      </div>
-      <div class="lyg_clear"></div>
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+                <a href="#" class="side-menu__toggler side-menu__close-btn">
+                    <img src="assets/images/shapes/close-1-1.png" alt="">
+                </a>
+            </div>
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+            <div class="side-menu__content">
+                <p>Lorem Ipsum is simply dummy text the printing and setting industry. Lorm Ipsum has been the
+                    industry's stanard dummy text ever.</p>
+                <p>
+                    <a href="mailto:needhelp@apton.com">needhelp@apton.com</a><br>
+                    <a href="tel:888-999-0000">888 9990000</a>
+                </p>
+                <div class="side-menu__social">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<!--底部-->
-<div id="ly_footer" class="ly_min">
-  <div class="ly_wrap">
-    <div class="ly_lbar ly_fl">
-      <div class="ly_logo"> <img src="images/f_logo.png" /> </div>
-    </div>
-    <div class="ly_cbar ly_fl">
-      <div class="ly_copyright">版权所有：&nbsp;&nbsp;&nbsp;&nbsp;地址：<br/>
-        电话：xxx-xxxx&nbsp;&nbsp;&nbsp;&nbsp;手机：&nbsp;&nbsp;&nbsp;&nbsp;联系人： </div>
-      <div class="lyg_support"></div>
-    </div>
-    <div class="ly_rbar ly_fr">
-      <div class="ly_nav"> <a href="#">更多留言</a>| <a href="#">联系我们</a></div>
-    </div>
-    <div class="lyg_clear"></div>
-  </div>
-</div>
+
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
+
 </html>

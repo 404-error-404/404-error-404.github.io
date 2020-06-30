@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news-content{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+.news-header{
+	margin: 40px 0px;
+	background:#FFFFFF;
+	border-radius: 8px;
+	border-left: 2px solid #ff466f;
+	border-bottom: 4px solid #ff466f;
+	max-width: 75%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.news-face{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border:2px solid #f9f5f0;
+}
+
+.news-faces{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border:2px solid #f9f5f0;
+	
+}
+
+.face-margin{
+	margin: 30px;
+}
+
+.news-face-detail{
+	margin: auto 0 auto 50px;
+/*	margin-left: 50px;*/
+}
+
+.news-face-name{
+	font-size: 30px;
+}
+
+
+.news-header-search{
+	border-radius: 50px;
+	border:2px solid #f9f5f0;
+	width: 45%;
+	background: #ffaf00;
+	padding: 20px;
+}
+
+.search_input{
+	margin: 0 5px;
+	width: 80%;
+	background: #fff;
+	border-radius: 50px;
+	border:2px solid #f9f5f0;
+	float: left;
+}
+.search-button{
+	color: #fff;
+	font-size: 24px;
+	width: 15%;
+	float: right;
+}
+.search_input hover{
+	
+}
+
+
+.title-ch{
+	float: left;
+	color: black;
+	display: inline-block; 
+	margin-right: 5px;
+}
+
+.title-ch span{
+	color: #ff466f;
+}
+
+.title-en{
+	float: right;
+}
+.news-all-content{
+	overflow: hidden;
+	margin: auto;
+	padding: 10px 5px;
+	background:#FFFFFF;
+	border-radius: 8px;
+	
+	width: 43%;
+	margin-top: 30px;
+/*	background:#798EB8;*/
+}
+
+
+.slide-content{
+	padding: 10px 5px;
+/*	background:#FFFFFF;*/
+/*	border-radius: 8px;*/
+	margin: auto;
+	width: 43%;
+	margin-top: 30px;
+}
+
+.red-border{
+	border-bottom: 4px solid #ff466f;
+}
+.all-content{
+	
+}
+
+.one-text{
+	font-size: 16px;
+}
+
+
+.one-comment{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-content: center;
+	
+}
+
+.one-comment-2{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	width: 100%;
+	align-content: center;
+}
+
+
+
+
+.one {
+	position: relative;
+}
+
+.content-notice-one {
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.all-content-title {
+	background: #fff;
+}
+
+.team-section {
+	position: relative;
+}
+
+.yellow-border {
+	border-bottom: 4px solid #ffaf00;
+}
+
+.blue-border {
+	border-bottom: 4px solid #0798ff;
+}
+
+.one-face {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.one-per-card {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+.face-ch {
+	margin: 10px 2px;
+	color: black;
+}
+
+.news-section {
+	position: relative;
+}
+
+.one-per-addinfo {
+	overflow: hidden;
+}
+
+
+
+.comment-btn {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	width: 50%;
+	background:#BFE4FF;
+	margin: 10px 0px;
+	border-radius: 20px;
+}
+
+.ml-1 {
+	margin-left: 10px;
+}
+
+.mr-1 {
+	margin-right: 10px;
+}
+
+.font-s {
+	font-size: 16px;
+}
+
+.mb-4 {
+	margin-bottom: 140px;
+}
+
+.load-more {
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
